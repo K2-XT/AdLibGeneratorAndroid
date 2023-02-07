@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.adlibandroidjava.FirstFragment"
+        android:label="First Fragment"
+        tools:layout="@layout/generator_fields_fragment">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.adlibandroidjava.SecondFragment"
+        android:label="Second Fragment"
+        tools:layout="@layout/fragment_second">
+
+        <argument
+            android:name="noun1"
+            app:argType="string"
+            android:defaultValue="" />
+
+        <argument
+            android:name="noun2"
+            app:argType="string"
+            android:defaultValue="" />
+
+        <argument
+            android:name="verb1"
+            app:argType="string"
+            android:defaultValue="" />
+
+        <argument
+            android:name="verb2"
+            app:argType="string"
+            android:defaultValue="" />
+
+        <argument
+            android:name="adjective"
+            app:argType="string"
+            android:defaultValue="" />
+
+        <argument
+            android:name="adverb"
+            app:argType="string"
+            android:defaultValue="" />
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#3ee1f9"
+    android:orientation="vertical"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="casual"
+        android:text="ADLIB APP"
+        android:textAlignment="center"
+        android:textColor="#44c545"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="casual"
+        android:text="COME UP WITH YOUR WORDS"
+        android:textAlignment="center"
+        android:textColor="#0885ff"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/noun1_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="casual"
+            android:text="NOUN 1:"
+            android:textSize="19sp"
+            android:textColor="#7265fa"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/noun1_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Noun..."
+            android:textColor="#FFFFFF"
+            android:textColorHint="#616160"
+            android:background="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5sp">
+
+        <TextView
+            android:id="@+id/noun2_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="casual"
+            android:text="NOUN 2:"
+            android:textSize="19sp"
+            android:textColor="#7265fa"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/noun2_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Noun..."
+            android:textColor="#FFFFFF"
+            android:textColorHint="#616160"
+            android:background="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5sp">
+
+        <TextView
+            android:id="@+id/verb1_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="casual"
+            android:text="VERB 1:"
+            android:textSize="19sp"
+            android:textColor="#7265fa"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/verb1_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Past Tense..."
+            android:textColor="#FFFFFF"
+            android:textColorHint="#616160"
+            android:background="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5sp">
+
+        <TextView
+            android:id="@+id/verb2_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="casual"
+            android:text="VERB 2:"
+            android:textSize="19sp"
+            android:textColor="#7265fa"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/verb2_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Past Tense..."
+            android:textColor="#FFFFFF"
+            android:textColorHint="#616160"
+            android:background="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5sp">
+
+        <TextView
+            android:id="@+id/adjective_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="casual"
+            android:text="ADJECTIVE:"
+            android:textSize="19sp"
+            android:textColor="#7265fa"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/adjective_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Adjective..."
+            android:textColor="#FFFFFF"
+            android:textColorHint="#616160"
+            android:background="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5sp">
+
+        <TextView
+            android:id="@+id/adverb_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="casual"
+            android:text="ADVERB:"
+            android:textSize="19sp"
+            android:textColor="#7265fa"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/adverb_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Ends in &quot;ly &quot;..."
+            android:textColor="#FFFFFF"
+            android:textColorHint="#616160"
+            android:background="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/generate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#35c759"
+            android:fontFamily="casual"
+            android:text="GENERATE"
+            android:textSize="31sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
