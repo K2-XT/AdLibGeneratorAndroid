@@ -13,10 +13,16 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner getInstrumentation()
+    //    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
+        debug {
+            buildConfigField 'String', 'TEST_TAGS', '"' + getTestTags() + '"'
+            buildConfigField 'String', 'TEST_SCENARIO', '"' + getTestScenario() + '"'
+            debuggable true
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -31,6 +37,17 @@ android {
     }
 }
 
+def getInstrumentation() {
+    project.hasProperty('cucumber') ?
+            'com.example.adlibandroidjava.test.CucumberRunner' :
+            'android.support.test.runner.AndroidJUnitRunner'
+}
+def getTestTags() {
+    project.getProperties().get('tags') ?: ''
+}
+def getTestScenario() {
+    project.getProperties().get('scenario') ?: ''
+}
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.6.0'
@@ -39,6 +56,11 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment:2.4.1'
     implementation 'androidx.navigation:navigation-ui:2.3.5'
     implementation 'com.google.android.material:material:1.8.0-alpha01'
+    //androidTestImplementation 'info.cukes:cucumber-android:1.2.5'
+    androidTestImplementation "io.cucumber:cucumber-android:4.9.0"
+    //androidTestImplementation 'io.cucumber:cucumber-java:7.11.1'
+    androidTestImplementation 'io.cucumber:cucumber-junit:7.11.1'
+    //androidTestImplementation 'info.cukes:cucumber-picocontainer:1.2.5'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
