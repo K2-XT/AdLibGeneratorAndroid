@@ -13,8 +13,8 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner getInstrumentation()
-    //    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //testInstrumentationRunner getInstrumentation()
+        testInstrumentationRunner 'com.example.adlibandroidjava.CucumberRunner.CucumberTestRunner'
     }
 
     buildTypes {
@@ -58,8 +58,9 @@ dependencies {
     implementation 'com.google.android.material:material:1.8.0-alpha01'
     //androidTestImplementation 'info.cukes:cucumber-android:1.2.5'
     androidTestImplementation "io.cucumber:cucumber-android:4.9.0"
+    androidTestImplementation "com.google.dagger:hilt-android-testing:2.44"
     //androidTestImplementation 'io.cucumber:cucumber-java:7.11.1'
-    androidTestImplementation 'io.cucumber:cucumber-junit:7.11.1'
+    //androidTestImplementation 'io.cucumber:cucumber-junit:7.11.1'
     //androidTestImplementation 'info.cukes:cucumber-picocontainer:1.2.5'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

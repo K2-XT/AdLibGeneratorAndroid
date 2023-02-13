@@ -1,4 +1,4 @@
-package com.example.adlibandroidjava.test.features.steps;
+package com.example.adlibandroidjava.steps;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
