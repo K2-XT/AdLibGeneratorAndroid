@@ -1,10 +1,11 @@
 package com.example.adlibandroidjava.test
 
-import cucumber.api.CucumberOptions
+import io.cucumber.junit.CucumberOptions
 
 @CucumberOptions(features = ["features"],
     plugin = [ "pretty" ],
     glue = ["com.example.adlibandroidjava.steps"],
     tags = ["@e2e", "@smoke"])
-//@SuppressWarnings("unused")
-public class CucumberTestCase
+public class CucumberOptionsClassKotlin {
+
+}

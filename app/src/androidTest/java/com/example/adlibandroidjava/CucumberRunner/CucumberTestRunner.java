@@ -4,8 +4,8 @@ import android.os.Bundle;
 
 import com.example.adlibandroidjava.BuildConfig;
 import io.cucumber.android.runner.CucumberAndroidJUnitRunner;
-import io.cucumber.junit.CucumberOptions;
 
+//@SuppressWarnings("unused")
 public class CucumberTestRunner extends CucumberAndroidJUnitRunner {
 
     private static final String CUCUMBER_TAGS_KEY = "tags";

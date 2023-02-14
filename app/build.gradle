@@ -39,7 +39,7 @@ android {
 
 def getInstrumentation() {
     project.hasProperty('cucumber') ?
-            'com.example.adlibandroidjava.test.CucumberRunner' :
+            'com.example.adlibandroidjava.CucumberRunner.CucumberTestRunner' :
             'android.support.test.runner.AndroidJUnitRunner'
 }
 def getTestTags() {
