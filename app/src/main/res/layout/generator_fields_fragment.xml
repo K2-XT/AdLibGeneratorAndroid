@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:id="@+id/GenerateFieldsFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
@@ -49,7 +51,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/noun1_edit_text"
+            android:id="@+id/NounOneField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -80,7 +82,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/noun2_edit_text"
+            android:id="@+id/NounTwoField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -111,7 +113,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/verb1_edit_text"
+            android:id="@+id/VerbOneField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -142,7 +144,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/verb2_edit_text"
+            android:id="@+id/VerbTwoField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -173,7 +175,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/adjective_edit_text"
+            android:id="@+id/AdjectiveField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -204,7 +206,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/adverb_edit_text"
+            android:id="@+id/AdverbField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"

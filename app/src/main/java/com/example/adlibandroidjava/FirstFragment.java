@@ -32,12 +32,12 @@ public class FirstFragment extends Fragment {
         binding.generateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String noun1 = binding.noun1EditText.getText().toString();
-                String noun2 = binding.noun2EditText.getText().toString();
-                String verb1 = binding.verb1EditText.getText().toString();
-                String verb2 = binding.verb2EditText.getText().toString();
-                String adjective = binding.adjectiveEditText.getText().toString();
-                String adverb = binding.adverbEditText.getText().toString();
+                String noun1 = binding.NounOneField.getText().toString();
+                String noun2 = binding.NounTwoField.getText().toString();
+                String verb1 = binding.VerbOneField.getText().toString();
+                String verb2 = binding.VerbTwoField.getText().toString();
+                String adjective = binding.AdjectiveField.getText().toString();
+                String adverb = binding.AdverbField.getText().toString();
                 handleGenerateAdLib(noun1, noun2, verb1, verb2, adjective, adverb);
             }
         });

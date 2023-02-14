@@ -50,7 +50,7 @@ public class SecondFragment extends Fragment {
 
         String constructedAdLib = adLibPart1 + noun1 + adLibPart2 + verb1 + adLibPart3 + noun1 + adLibPart4 + noun2 + adLibPart5 + adjective + adLibPart6 + noun2 + adLibPart7 + noun2 + adLibPart8 + adverb + adLibPart9 + verb2 + adLibPart10 + noun2 + adLibPart11;
 
-        binding.adlibTextView.setText(constructedAdLib);
+        binding.AdLibTextView.setText(constructedAdLib);
 
 //            binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
 //                @Override
